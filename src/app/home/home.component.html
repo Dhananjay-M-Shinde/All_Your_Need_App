@@ -1,14 +1,27 @@
-<nav>
-    <div class="logo">
-       All_In_One_App
-    </div>
-    <ul>
-       <li><a class="active" href="#">Home</a></li>
-       <li><a href="#">Calculator</a></li>
-       <li><a href="#">Age Calculator</a></li>
-       <li><a href="#">Timer</a></li>
-       <li><a href="#">Digital Clock</a></li>
-       <li><a href="#" id="login">Login</a></li>
-    </ul>
- </nav>
-
+<nav class="navbar">
+   <!-- LOGO -->
+   <div class="logo">
+       <a href="#">
+           <img src="logo.jpg"  height="20px" width="30px" srcset="">
+           <span>All_In_One_App</span>
+       </a>
+   </div>
+   <!-- NAVIGATION MENU -->
+   <ul class="nav-links">
+       <!-- USING CHECKBOX TRICK-->
+       <input type="checkbox" id="checkbox_toggle" />
+       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li class="#"><a href="/">Calculator</a></li>
+           <li><a href="#">AgeCalculator</a></li>
+           <li><a href="#">Timer</a></li>
+           <li><a href="#">DigitalClock</a></li>
+       </div>
+   </ul>
+</nav>
+<div class="homepage">
+   This is the Homepage!
+</div>
