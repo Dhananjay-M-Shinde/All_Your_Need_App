@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Calculator</h1>
+    <input type="text" name="input" id="input" value="{{input}}"><br>
+    <input type="text" name="result" id="result" value="{{result}}">
+    <table class="table-class">
+      <tr>
+        <td><button class="clear" (click)="clear()">x</button></td>
+        <td><button class="Allclear" (click)="allClear()">C</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="pressNum('7')">7</button></td>
+        <td><button (click)="pressNum('8')">8</button></td>
+        <td><button (click)="pressNum('9')">9</button></td>
+        <td><button (click)="pressOperator('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="pressNum('4')">4</button></td>
+        <td><button (click)="pressNum('5')">5</button></td>
+        <td><button (click)="pressNum('6')">6</button></td>
+        <td><button (click)="pressNum('*')">X</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="pressNum('1')">1</button></td>
+        <td><button (click)="pressNum('2')">2</button></td>
+        <td><button (click)="pressNum('3')">3</button></td>
+        <td><button (click)="pressOperator('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button (click)="pressNum('0')">0</button></td>
+        <td><button (click)="pressNum('.')">.</button></td>
+        <td><button (click)="getAnswer()">=</button></td>
+        <td><button (click)="pressOperator('+')">+</button></td>
+      </tr>
+    </table>
+  </div>

@@ -23,12 +23,10 @@ li {
   color: rgb(255, 254, 254);
 }
 /* LOGO */
-.logo img {
-  padding-left: 25%;
-}
-
 .logo span{
   color: white;
+  font-size: 20px
+  ;
 }
 /* NAVBAR MENU */
 .menu {
@@ -42,13 +40,19 @@ li {
   font-weight: bold;
 }
 .menu li {
-  padding: 5px 14px;
-}
-
-.menu li a:hover{
-  color: black;
   padding: 5px 10px;
 }
+
+.menu li:hover {
+  color: black;
+  border: 1px solid violet;
+  border-radius: 5px;
+}
+
+.menu li:hover a{
+  color: black;
+}
+
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX TRICK */
 input[type=checkbox] {
@@ -73,8 +77,9 @@ input[type=checkbox] {
   }
   .menu li:hover {
       display: inline-block;
-      background-color: white;
+      background-color: black;
       transition: 0.3s ease;
+      border-radius: 5px;
   }
 
   .menu li a{
@@ -83,6 +88,7 @@ input[type=checkbox] {
 
   .menu li a:hover{
     color: black;
+    
   }
   .menu li+li {
       margin-top: 12px;
